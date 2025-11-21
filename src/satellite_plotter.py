@@ -67,7 +67,7 @@ class SatellitePlotter:
             zorder=2
         ))
 
-        plt.text(0.5, 0.05, "\"Temu FNMOC isn't real it can't hurt you\"", horizontalalignment='center', verticalalignment='center', fontsize=10, color='black', transform=ax.transAxes, zorder=2)
+        plt.text(0.5, 0.05, "https://github.com/Quinta11/hurricane-imagery-tool", horizontalalignment='center', verticalalignment='center', fontsize=10, color='black', transform=ax.transAxes, zorder=2)
 
     def _add_header(self, ax):
         rect_x = 0
@@ -93,7 +93,7 @@ class SatellitePlotter:
         file_minute = str(self.file_dict['time'].minute).zfill(2)
         file_time = file_hour + file_minute
         file_date = str(self.file_dict['time'].month).zfill(2) + '/' + str(self.file_dict['time'].day).zfill(2) + '/' + str(self.file_dict['time'].year)[-2:]
-        plt.text(0.01, 0.96, f'{file_date} {file_time}Z  {self.satellite} IR', fontsize=10, color='black', transform=ax.transAxes, zorder=2)
+        plt.text(0.01, 0.96, f'{file_date} {file_time}Z  {self.satellite.upper()} IR', fontsize=10, color='black', transform=ax.transAxes, zorder=2)
 
     def plot(self):
         # Determine bounds to use for plot

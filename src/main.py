@@ -113,7 +113,7 @@ def get_max_eye_temp(data):
 
 if __name__ == "__main__":
     band = "wv"
-    atcf_id = "al142018"
+    atcf_id = "al132025"
     storm = StormFetcher(atcf_id)
     data = storm.interpolate_dataframe(storm.data)
     # get_max_eye_temp(data)

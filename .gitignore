@@ -40,3 +40,8 @@ htmlcov/
 *.swp
 .mypy_cache/
 .tox/
+
+# Files
+/storm_atcf.dat
+/storm_atcf.dat.gz
+/fnmoc_example.jpg

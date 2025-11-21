@@ -4,7 +4,6 @@ import gzip
 import shutil
 import csv
 import pandas as pd
-from storm_tracker import StormTracker
 
 pd.set_option('display.max_columns', None)
 
